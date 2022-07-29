@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+  }
+  body{
+    background-color: var(--backgrond);
+    font-family: 'Manrope', sans-serif;
+    margin: 0px;
+  }
+  .logotipos{
+    display: flex;
+    justify-content: space-between;
+    margin:  20px 10px;
+    padding: 10px;
+  }
+  .closebutton{
+    font-size: 1.5rem;
+    background-color: var(--backgrond);
+    color:#8257E5;
+    font-weight: bolder;
+    margin: 0px;
+  }
+  #menu{
+    display: flex;
+    flex-direction: column;    
+  }
+ 
+ .menu-list{
+    padding-inline-start: unset;
+  }
+  .menu-link{
+    color: #d1cccc;
+    text-decoration: none;
+    line-height: 50px;
+    margin-left: 30px;
+  }
+  .menu-link:hover{
+    color: #FFF;
+  }
+  header h1{
+    color: var(--text-color-menu-mobile);
+    font-weight: 500;
+    margin: 70px 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  section{
+    text-align: center;
+  }
+section button{
+    font-weight: bolder;
+    padding: 10px 30px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 2px solid #8257e5;
+    border-radius: 8px;  
+  }
+  #Buttom-1:hover{
+    background-color:var(--button);
+    transition-duration: 1s;
+    color:var(--text-color);
+}
+  .titles{
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 100px;
+    width: 90vw;
+    margin: auto;
+  }
+
+  #title-style{
+    color: #000;
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    margin-top: 0px;
+  }
+  .titles :first-child{
+    margin-bottom: 0px;
+
+  }
+  .img-coffee{
+    width: 100vw;
+    height: auto;
+    animation: aws 3s ease-in-out alternate infinite;
+  }
+  #section-coffee{
+    background-image: url('assets/blur-2.png');
+  }
+  #content{
+    background-image: url('assets/blur-mobile.png');
+    width: 100vw;
+    background-position: bottom, top;
+  }
+  .invisible{
+    display: none;
+    visibility: hidden;
+  }
+  @media (max-width:375px){
+    .titles{
+      font-size: 2.5rem;
+    }
+  }
+  @keyframes aws {
+    to {
+        transform: translateY(30px);
+    }
+}

@@ -1,0 +1,71 @@
+@media (min-width:1024px){
+    :root {
+        --backgrond: #000;
+        --text-color: #FFF;
+        --button: #8257E5;
+        --border: #29292E;
+        --border-menu-mobile: #A8A8B3;
+        --text-color-menu-mobile: #E1E1E6;
+      }
+    .logotipos{
+        display: none;
+    }
+    body{
+        background-image: url('assets/blur-2.png');
+        background-repeat: no-repeat;
+        background-size: 950px 550px;
+        background-position: top right;
+    }
+    #title{
+        display: none;
+    }
+    .menu-list{
+        display: flex;
+        visibility: visible;
+        list-style: none;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    #Buttom-1{
+        position: relative;
+        top: -60px;
+        right: -400px;
+        margin: auto;
+        background: none;
+        font-size: .7rem;
+        font-weight:bold;
+    }
+    #Buttom-1:hover{
+        background-color:var(--button);
+        transition-duration: 1s;
+        color:var(--text-color);
+    }
+    .titles{
+        justify-content: center;
+        font-size: 4rem;
+    }
+    .titles p{
+        margin-top: 0px;
+    }
+    #title-style{
+        margin-bottom: 0px;
+    }
+    .img-coffee{
+        width: 60vw;
+        animation: aws 3s ease-in-out alternate infinite;
+    }
+    #content{
+        background-image: url('assets/blur-1.png');
+        background-repeat: no-repeat;
+        background-size: 550px 550px;
+        background-position: bottom left;
+    }
+
+
+    @keyframes aws {
+        to {
+            transform: translateY(30px);
+        }
+    }
+
+}
