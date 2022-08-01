@@ -2,9 +2,9 @@ const openbutton = document.getElementById('openbutton')
 const close = document.querySelector('.closebutton')
 const menu = document.querySelector('.menu-list')
 const title = document.getElementById('title')
-const section = document.querySelector('section')
+const section = document.getElementById('section')
 
-
+/*Definindo uma função no botão, para ao ser acionado abra o menu lateral e adcionando uma classe para ocultar os outros items para que o menu apareça sem interrupções.*/
 openbutton.onclick = function(){
     close.classList.remove('invisible')
     openbutton.classList.add('invisible')
@@ -13,6 +13,7 @@ openbutton.onclick = function(){
     menu.classList.remove('invisible')
 }
 
+/*Definindo uma função no botão para que ao ser acionado feche o menu e remova a classe adcionada anteriormente para a página.*/
 close.onclick = function(){
     close.classList.add('invisible')
     openbutton.classList.remove('invisible')
@@ -20,17 +21,6 @@ close.onclick = function(){
     section.classList.remove('invisible')
     menu.classList.add('invisible')
 }
-/*
-  window.onresize = function(event) {
-    if (window.innerWidth >= 1024) {
-        menu.classList.remove('invisible')
-        title.classList.add('invisible')
-    }
-    else if(window.innerWidth < 1024) {
-        menu.classList.add('invisible')
-        title.classList.remove('invisible')
-    }
-  };
 
-  */
+                        /*JavaScript desenvolvido por Eliézer Alves Bernardino.*/
 

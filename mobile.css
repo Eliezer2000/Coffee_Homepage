@@ -1,114 +1,144 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 
+/*Definindo as cores padrão do projeto.*/
 :root {
     --backgrond: #000;
     --text-color: #FFF;
-    --button: #8257E5;
+    --button: #8257E5;                        
     --border: #29292E;
     --border-menu-mobile: #A8A8B3;
     --text-color-menu-mobile: #E1E1E6;
   }
-  body{
-    background-color: var(--backgrond);
-    font-family: 'Manrope', sans-serif;
-    margin: 0px;
-  }
-  .logotipos{
-    display: flex;
-    justify-content: space-between;
-    margin:  20px 10px;
-    padding: 10px;
-  }
-  .closebutton{
-    font-size: 1.5rem;
-    background-color: var(--backgrond);
-    color:#8257E5;
-    font-weight: bolder;
-    margin: 0px;
-  }
-  #menu{
-    display: flex;
-    flex-direction: column;    
-  }
- 
- .menu-list{
-    padding-inline-start: unset;
-  }
-  .menu-link{
-    color: #d1cccc;
-    text-decoration: none;
-    line-height: 50px;
-    margin-left: 30px;
-  }
-  .menu-link:hover{
-    color: #FFF;
-  }
-  header h1{
-    color: var(--text-color-menu-mobile);
-    font-weight: 500;
-    margin: 70px 10px;
-    padding: 20px;
-    text-align: center;
-  }
-  section{
-    text-align: center;
-  }
-section button{
-    font-weight: bolder;
-    padding: 10px 30px;
-    text-align: center;
-    background-color: black;
-    color: white;
-    border: 2px solid #8257e5;
-    border-radius: 8px;  
-  }
-  #Buttom-1:hover{
-    background-color:var(--button);
-    transition-duration: 1s;
-    color:var(--text-color);
+
+/*Definindo esse classe para utiliza-la no JavaScript manipulando com o Dom para abrir e fechar o Menu mobile.*/
+.invisible{
+  display: none;
+  visibility: hidden;
 }
+
+/*Definindo a cor de fundo, a fonte e zerando a margin do corpo da página.*/
+body{
+  background-color: var(--backgrond);
+  font-family: 'Manrope', sans-serif;
+  margin: 0px;
+}
+
+/*Estilização dos ícones do cabeçalho da página na versão mobile.*/
+#logos{
+  display: flex;
+  justify-content: space-between;
+  margin:  20px 10px;
+  padding: 10px;
+}
+.closebutton{
+font-size: 1.5rem;
+background-color: var(--backgrond);
+color:#8257E5;
+font-weight: bolder;
+margin: 0px;
+}
+
+/*Estilização do menu lateral Mobile.*/
+#menu{
+display: flex;
+flex-direction: column;    
+}
+.menu-list{
+padding-inline-start: unset;
+}
+
+/*Estilizando os links do menu adcionando cores e espaçamento entre eles, quebrando a estilização padrão.*/
+.menu-link{
+color: #d1cccc;
+text-decoration: none;
+line-height: 50px;
+margin-left: 30px;
+}
+
+/*Adcionando o hover aos links.*/
+.menu-link:hover{
+  color: #FFF;
+}
+
+/*Estilizando o título principal da página.*/
+#title{
+  color: var(--text-color-menu-mobile);
+  font-weight: 500;
+  margin: 70px 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Centralizando os items da section.*/
+#section{
+  text-align: center;
+}
+
+/*Estilizando o botão princípal da página na versão mobile.*/
+#Buttom-1{
+  font-weight: bolder;
+  padding: 10px 30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 2px solid #8257e5;
+  border-radius: 8px;  
+}
+
+/*Colocando um hover no botão da página adcionando uma transição de 1 segundo no hover.*/
+#Buttom-1:hover{
+  background-color:var(--button);
+  transition-duration: 1s;
+  color:var(--text-color);
+}
+
+/*Estilizando o background de uma parte da section colocando um degradê com o background-image.*/
+#content{
+background-image: url('assets/blur-mobile.png');
+width: 100vw;
+background-position: bottom, top;
+}
+
+/*Estilizando os títulos da parte final da section.*/
+.titles{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 100px;
+  width: 90vw;
+  margin: auto;
+}
+
+/*Colocando um efeito no texto do título.*/
+#title-style{
+  color: #000;
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  margin-top: 0px;
+}
+
+/*Tirando a margem bottom do primeiro parágrafo da section.*/
+.titles :first-child{
+  margin-bottom: 0px;
+}
+
+/*Ajustando a imagem principal para dispositivos mobile e adcionando uma animação a imagem.*/
+.img-coffee{
+  width: 100vw;
+  height: auto;
+  animation: aws 3s ease-in-out alternate infinite;
+}
+
+/*Diminuindo os parágrafos da section para se ajustar para um menor tamanho de tela.*/  
+@media (max-width:375px){
   .titles{
-    color: white;
-    font-size: 3rem;
-    font-weight: 700;
-    margin-top: 100px;
-    width: 90vw;
-    margin: auto;
+    font-size: 2.5rem;
   }
-
-  #title-style{
-    color: #000;
-    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
-    margin-top: 0px;
-  }
-  .titles :first-child{
-    margin-bottom: 0px;
-
-  }
-  .img-coffee{
-    width: 100vw;
-    height: auto;
-    animation: aws 3s ease-in-out alternate infinite;
-  }
-  #section-coffee{
-    background-image: url('assets/blur-2.png');
-  }
-  #content{
-    background-image: url('assets/blur-mobile.png');
-    width: 100vw;
-    background-position: bottom, top;
-  }
-  .invisible{
-    display: none;
-    visibility: hidden;
-  }
-  @media (max-width:375px){
-    .titles{
-      font-size: 2.5rem;
-    }
-  }
-  @keyframes aws {
-    to {
-        transform: translateY(30px);
-    }
 }
+/*Criando a animação para a imagem principal do barner.*/
+@keyframes aws {
+  to {
+      transform: translateY(30px);
+  }
+}
+
+                                   /*CSS desenvolvido por Eliézer Alves Bernardino.*/

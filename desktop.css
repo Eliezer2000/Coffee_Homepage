@@ -1,4 +1,5 @@
 @media (min-width:1024px){
+    /*Definindo as cores padrão do projeto.*/
     :root {
         --backgrond: #000;
         --text-color: #FFF;
@@ -7,18 +8,21 @@
         --border-menu-mobile: #A8A8B3;
         --text-color-menu-mobile: #E1E1E6;
       }
-    .logotipos{
-        display: none;
-    }
+    
+    /*Adicionando um degradê com o background-image na página ao lado do botão.*/
     body{
         background-image: url('assets/blur-2.png');
         background-repeat: no-repeat;
         background-size: 950px 550px;
         background-position: top right;
     }
-    #title{
+
+    /*Tirando o logotipo da marca e os botões de abrir e fechar o menu.*/
+    #logos{
         display: none;
     }
+
+    /*Redefinindo o menu alterando sua posição e tornando-o visível na página princípal.*/
     .menu-list{
         display: flex;
         visibility: visible;
@@ -26,6 +30,13 @@
         justify-content: center;
         margin-top: 50px;
     }
+
+    /*Ocultando o título princípal da página para se ajustar ao novo estilo de layout.*/
+    #title{
+        display: none;
+    }
+    
+    /*Alterando a posição do botão para ficar ao lado do menu e modificando o tamanho da fonte, e adcionando hover a ele.*/
     #Buttom-1{
         position: relative;
         top: -60px;
@@ -40,6 +51,16 @@
         transition-duration: 1s;
         color:var(--text-color);
     }
+
+    /*Adicionando um degradê com o background-image no bottom da página.*/
+    #content{
+        background-image: url('assets/blur-1.png');
+        background-repeat: no-repeat;
+        background-size: 550px 550px;
+        background-position: bottom left;
+    }
+
+    /*Colocando os parágrafos com a classe denominada títulos no centro da página e aumentando sua fonte.E alterando a margin deles.*/
     .titles{
         justify-content: center;
         font-size: 4rem;
@@ -50,18 +71,14 @@
     #title-style{
         margin-bottom: 0px;
     }
+    
+    /*Redefinindo o tamanho da imagem principal e adicionando animação na imagem.*/
     .img-coffee{
         width: 60vw;
         animation: aws 3s ease-in-out alternate infinite;
     }
-    #content{
-        background-image: url('assets/blur-1.png');
-        background-repeat: no-repeat;
-        background-size: 550px 550px;
-        background-position: bottom left;
-    }
-
-
+    
+    /*Criando animação para adcionar a imagem.*/
     @keyframes aws {
         to {
             transform: translateY(30px);
@@ -69,3 +86,4 @@
     }
 
 }
+                                    /*CSS desenvolvido por Eliézer Alves Bernardino.*/
