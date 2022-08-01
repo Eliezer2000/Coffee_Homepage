@@ -23,7 +23,7 @@
  - [x] Dispositivos Mobile:
  
  
- ![20220405_221316](https://user-images.githubusercontent.com/95540848/161876193-3ed0b3ab-753b-4ebd-b94f-89a6f23c59ed.gi)
+ ![20220801_151326](https://user-images.githubusercontent.com/95540848/182214945-9f758f01-87a9-4591-962c-b056a55ed3fc.gif)
  
  ***
  
