@@ -16,7 +16,7 @@
  
  - [x] Dispositivos Desktops:
  
- ![20220405_222031](https://user-images.githubusercontent.com/95540848/161877275-a12a87c9-807d-4847-bb7e-716b8fff2f6b.gi)
+ ![20220801_150229](https://user-images.githubusercontent.com/95540848/182213135-5d539fa1-fdf9-4dff-b745-f110fd215800.gif)
  
  ***
  
