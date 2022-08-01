@@ -29,7 +29,7 @@
  
   ## 🛠️ Abrir e rodar o projeto:
  
-  🔎 [Acessar Coffe Homepage](https://eliezer2000.github.io/landingPage/)
+  🔎 [Acessar Coffe Homepage](https://eliezer2000.github.io/Coffee_Homepage/)
   
   ***
   
